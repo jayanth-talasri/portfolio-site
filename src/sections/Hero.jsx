@@ -1,4 +1,13 @@
 import profileImage from "../assets/my-image.png";
+import {
+  FaReact,
+  FaGithub,
+  FaNodeJs,
+  FaJsSquare,
+} from "react-icons/fa";
+
+import { SiTailwindcss } from "react-icons/si";
+import { motion } from "framer-motion";
 function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6">
@@ -7,7 +16,11 @@ function Hero() {
 
       <div className="relative z-10 max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
-        <div>
+        <motion.div
+  initial={{ opacity: 0, y: 40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+>
           <p className="text-purple-400 uppercase tracking-[0.3em] text-sm mb-4">
             Open To Opportunities
           </p>
@@ -34,37 +47,75 @@ function Hero() {
               Contact Me
             </button>
           </div>
-        </div>
+        </motion.div>
 
         {/* Right Visual */}
-        <div className="flex justify-center">
+        <motion.div
+             className="flex justify-center"
+             initial={{ opacity: 0, scale: 0.8 }}
+             animate={{ opacity: 1, scale: 1 }}
+             transition={{ duration: 1 }}
+                >
           <div className="relative">
             {/* Glow */}
             <div className="absolute inset-0 bg-purple-500/30 blur-3xl rounded-full" />
 
             {/* Avatar */}
-            <div className="relative">
-  {/* Glow Ring */}
-  <div className="absolute inset-0 rounded-full bg-purple-500/30 blur-3xl" />
+            <motion.div
+                className="relative"
+                  animate={{
+                y: [0, -10, 0],
+                }}
+                 transition={{
+                duration: 4,
+                repeat: Infinity,
+                ease: "easeInOut",
+                }}
+               >
+            {/* Glow Ring */}
+              <div className="absolute inset-0 rounded-full bg-purple-500/30 blur-3xl" />
+                {/* Floating React */}
+                <div className="absolute -top-6 -left-6 w-14 h-14 rounded-full bg-[#111827] border border-white/10 flex items-center justify-center shadow-lg shadow-cyan-500/20 animate-bounce">
+                <FaReact className="text-cyan-400 text-3xl" />
+                </div>
 
-  {/* Profile Image */}
-  <img
-    src={profileImage}
-    alt="Jayanth"
-    className="
-      relative
-      w-72
-      h-72
-      object-cover
-      rounded-full
-      border
-      border-white/10
-      shadow-2xl
-    "
-  />
-</div>
+                {/* Floating JS */}
+                <div className="absolute top-10 -right-10 w-14 h-14 rounded-full bg-[#111827] border border-white/10 flex items-center justify-center shadow-lg shadow-yellow-500/20 animate-pulse">
+                <FaJsSquare className="text-yellow-400 text-3xl" />
+                </div>
+
+                {/* Floating Tailwind */}
+                <div className="absolute bottom-10 -left-10 w-14 h-14 rounded-full bg-[#111827] border border-white/10 flex items-center justify-center shadow-lg shadow-sky-500/20 animate-bounce">
+                <SiTailwindcss className="text-sky-400 text-3xl" />
+                </div>
+
+                {/* Floating GitHub */}
+                <div className="absolute -bottom-6 right-0 w-14 h-14 rounded-full bg-[#111827] border border-white/10 flex items-center justify-center shadow-lg shadow-white/10 animate-pulse">
+                <FaGithub className="text-white text-3xl" />      
+                </div>
+
+                {/* Floating Node */}
+                <div className="absolute top-1/2 -right-16 w-14 h-14 rounded-full bg-[#111827] border border-white/10 flex items-center justify-center shadow-lg shadow-green-500/20 animate-bounce">
+                <FaNodeJs className="text-green-400 text-3xl" />
+                </div>
+              {/* Profile Image */}
+             <img
+               src={profileImage}
+               alt="Jayanth"
+                className="
+                relative
+                w-72
+                h-72
+                object-cover
+                rounded-full
+                border
+                border-white/10
+                shadow-2xl
+                "
+                />
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
