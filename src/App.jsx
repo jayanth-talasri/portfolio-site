@@ -1,8 +1,11 @@
+import Navbar from "./components/Navbar";
+import Hero from "./sections/Hero";
+
 function App() {
   return (
-    <div>
-      <h1>Hello, I am a Frontend Developer</h1>
-      <p>This is my portfolio website.</p>
+    <div className="bg-[#050816] text-white overflow-x-hidden">
+      <Navbar />
+      <Hero />
     </div>
   );
 }
