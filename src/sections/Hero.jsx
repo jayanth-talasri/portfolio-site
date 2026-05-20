@@ -1,3 +1,4 @@
+import profileImage from "../assets/my-image.png";
 function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6">
@@ -42,9 +43,26 @@ function Hero() {
             <div className="absolute inset-0 bg-purple-500/30 blur-3xl rounded-full" />
 
             {/* Avatar */}
-            <div className="relative w-72 h-72 rounded-full border border-white/10 bg-[#111827] flex items-center justify-center text-6xl font-bold">
-              J
-            </div>
+            <div className="relative">
+  {/* Glow Ring */}
+  <div className="absolute inset-0 rounded-full bg-purple-500/30 blur-3xl" />
+
+  {/* Profile Image */}
+  <img
+    src={profileImage}
+    alt="Jayanth"
+    className="
+      relative
+      w-72
+      h-72
+      object-cover
+      rounded-full
+      border
+      border-white/10
+      shadow-2xl
+    "
+  />
+</div>
           </div>
         </div>
       </div>
