@@ -20,12 +20,11 @@ function Contact() {
           </p>
 
           <h2 className="text-5xl font-black mb-6">
-            Let's Work Together
+            Let’s Build Something Together
           </h2>
 
           <p className="text-gray-400 max-w-2xl mx-auto leading-relaxed">
-            Interested in collaborating, building modern web experiences,
-            or discussing opportunities? Feel free to reach out.
+            I’m currently open to internships, collaborations, and opportunities in Software Engineering, Artificial Intelligence, and Cloud Technologies.
           </p>
         </motion.div>
 

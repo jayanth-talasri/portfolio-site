@@ -7,6 +7,7 @@ function About() {
       className="relative py-32 px-6"
     >
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+
         {/* Left Side */}
         <motion.div
           initial={{ opacity: 0, x: -60 }}
@@ -19,21 +20,28 @@ function About() {
           </p>
 
           <h2 className="text-5xl font-black leading-tight mb-6">
-            Building Modern
+            AI-Focused Software
             <br />
-            Digital Experiences
+            Engineer
           </h2>
 
           <p className="text-gray-400 text-lg leading-relaxed mb-6">
-            I am passionate about creating immersive, scalable, and
-            high-performance web applications using modern frontend
-            technologies.
+            I’m a recent Information Technology graduate passionate
+about Artificial Intelligence, Machine Learning,
+Cloud Computing, and modern software engineering.
+          </p>
+
+          <p className="text-gray-500 leading-relaxed mb-6">
+            I enjoy building intelligent applications, scalable
+            systems, and modern digital experiences by combining
+            software engineering principles with AI-driven solutions.
           </p>
 
           <p className="text-gray-500 leading-relaxed">
-            My focus is on combining clean engineering principles with
-            futuristic user interfaces to build products that feel both
-            functional and visually premium.
+            My current focus is on continuously improving my
+            skills in machine learning, cloud technologies,
+            and full-stack development while building impactful
+            real-world projects.
           </p>
         </motion.div>
 
@@ -45,29 +53,41 @@ function About() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          {/* Glow */}
+
+          {/* Glow Effect */}
           <div className="absolute inset-0 bg-purple-500/20 blur-3xl rounded-3xl" />
 
-          {/* Card */}
+          {/* Stats Card */}
           <div className="relative p-10 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl">
             <div className="grid grid-cols-2 gap-8">
+
               <div>
                 <h3 className="text-4xl font-black text-purple-400 mb-2">
-                  2+
+                  AI/ML
                 </h3>
 
                 <p className="text-gray-400">
-                  Years Learning
+                  Learning Focus
                 </p>
               </div>
 
               <div>
                 <h3 className="text-4xl font-black text-purple-400 mb-2">
-                  10+
+                  AWS
                 </h3>
 
                 <p className="text-gray-400">
-                  Projects Built
+                  Cloud Exposure
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-4xl font-black text-purple-400 mb-2">
+                  7+
+                </h3>
+
+                <p className="text-gray-400">
+                  Projects & Practice
                 </p>
               </div>
 
@@ -77,19 +97,10 @@ function About() {
                 </h3>
 
                 <p className="text-gray-400">
-                  Frontend Focus
+                  Frontend Development
                 </p>
               </div>
 
-              <div>
-                <h3 className="text-4xl font-black text-purple-400 mb-2">
-                  UI/UX
-                </h3>
-
-                <p className="text-gray-400">
-                  Design Thinking
-                </p>
-              </div>
             </div>
           </div>
         </motion.div>

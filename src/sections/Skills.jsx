@@ -1,14 +1,51 @@
 import { motion } from "framer-motion";
 
-const skills = [
-  "React",
-  "JavaScript",
-  "Tailwind CSS",
-  "Node.js",
-  "Git & GitHub",
-  "Framer Motion",
-  "HTML5",
-  "CSS3",
+const skillCategories = [
+  {
+    title: "Programming",
+    skills: ["Python", "JavaScript", "C", "C++"],
+  },
+
+  {
+    title: "AI & Machine Learning",
+    skills: [
+      "Machine Learning",
+      "Deep Learning",
+      "Pandas",
+      "NumPy",
+    ],
+  },
+
+  {
+    title: "Web Development",
+    skills: [
+      "React",
+      "Django",
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+    ],
+  },
+
+  {
+    title: "Cloud & Deployment",
+    skills: [
+      "AWS EC2",
+      "Amazon RDS",
+      "Git",
+      "GitHub",
+    ],
+  },
+
+  {
+    title: "Core Computer Science",
+    skills: [
+      "DSA",
+      "OOP",
+      "DBMS",
+      "Operating Systems",
+    ],
+  },
 ];
 
 function Skills() {
@@ -18,6 +55,7 @@ function Skills() {
       className="relative py-32 px-6"
     >
       <div className="max-w-7xl mx-auto">
+
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -31,51 +69,73 @@ function Skills() {
           </p>
 
           <h2 className="text-5xl font-black mb-6">
-            Technologies I Use
+            Technologies & Expertise
           </h2>
 
-          <p className="text-gray-400 max-w-2xl mx-auto leading-relaxed">
-            I enjoy building modern web applications using scalable
-            frontend technologies, animation systems, and clean UI
-            architecture.
+          <p className="text-gray-400 max-w-3xl mx-auto leading-relaxed">
+            A combination of software engineering, AI/ML, cloud technologies,
+            and modern web development tools used to build scalable and
+            intelligent digital systems.
           </p>
         </motion.div>
 
-        {/* Skill Grid */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          {skills.map((skill, index) => (
+        {/* Skills Categories */}
+        <div className="grid lg:grid-cols-2 gap-10">
+
+          {skillCategories.map((category, index) => (
             <motion.div
-              key={skill}
+              key={category.title}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.5,
+                duration: 0.6,
                 delay: index * 0.1,
               }}
               viewport={{ once: true }}
-              whileHover={{
-                scale: 1.05,
-              }}
               className="
-                relative
-                group
-                p-8
                 rounded-3xl
                 border
                 border-white/10
                 bg-white/5
                 backdrop-blur-xl
-                overflow-hidden
+                p-8
+                hover:border-purple-500/40
+                transition
               "
             >
-              {/* Glow Effect */}
-              <div className="absolute inset-0 bg-purple-500/0 group-hover:bg-purple-500/10 transition duration-500" />
 
-              <h3 className="relative text-2xl font-bold text-white">
-                {skill}
+              {/* Category Title */}
+              <h3 className="text-2xl font-bold mb-6 text-white">
+                {category.title}
               </h3>
+
+              {/* Skills */}
+              <div className="flex flex-wrap gap-4">
+
+                {category.skills.map((skill) => (
+                  <div
+                    key={skill}
+                    className="
+                      px-4
+                      py-2
+                      rounded-full
+                      bg-purple-500/10
+                      border
+                      border-purple-500/20
+                      text-sm
+                      text-gray-200
+                      hover:bg-purple-500/20
+                      transition
+                    "
+                  >
+                    {skill}
+                  </div>
+                ))}
+
+              </div>
             </motion.div>
           ))}
+
         </div>
       </div>
     </section>

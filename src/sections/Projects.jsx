@@ -1,25 +1,24 @@
 import { motion } from "framer-motion";
 
 const projects = [
+  
+  {
+    title: "Solar Irradiance Forecasting using Deep Learning",
+    description:
+      "Built a deep learning-based forecasting system using LSTM models to predict solar irradiance from meteorological time-series data. Achieved high prediction accuracy through advanced preprocessing, feature engineering, and model optimization techniques.",
+    tech: ["Python", "TensorFlow", "Pandas","Scikit-learn"],
+  },
   {
     title: "AI Portfolio Website",
     description:
       "A futuristic developer portfolio built using React, Tailwind CSS, and Framer Motion with immersive UI design.",
     tech: ["React", "Tailwind", "Framer Motion"],
   },
-
   {
-    title: "Modern Dashboard UI",
+    title: "Movie Magic Online Ticket Booking Platform",
     description:
-      "A responsive analytics dashboard with clean architecture, modern UI systems, and interactive components.",
-    tech: ["React", "Charts", "UI/UX"],
-  },
-
-  {
-    title: "E-Commerce Platform",
-    description:
-      "A scalable frontend e-commerce experience with responsive layouts and premium product interfaces.",
-    tech: ["React", "Node.js", "MongoDB"],
+      "Developed and deployed a full-stack movie ticket booking platform with secure authentication, real-time seat management, and scalable cloud infrastructure using AWS EC2 and Amazon RDS.",
+    tech: ["Django", "SQL", "AWS","HTML","CSS","Javascript"],
   },
 ];
 
@@ -119,11 +118,7 @@ function Projects() {
                 {/* Buttons */}
                 <div className="flex gap-4">
                   <button className="px-5 py-2 rounded-full bg-purple-600 hover:bg-purple-500 transition text-sm font-medium">
-                    Live Demo
-                  </button>
-
-                  <button className="px-5 py-2 rounded-full border border-white/10 hover:border-purple-500 transition text-sm font-medium">
-                    GitHub
+                    View Code
                   </button>
                 </div>
               </div>
