@@ -1,5 +1,5 @@
 import profileImage from "../assets/my-image.png";
-import resume from "../assets/Jayanth-resume.pdf";
+import resume from "../assets/resume.pdf";
 import {
   FaReact,
   FaGithub,

@@ -1,5 +1,5 @@
 import awsCert from "../assets/certificates/AWS-certificate.pdf";
-import deepLearningCert from "../assets/certificates/Deep Learning-certificate.pdf";
+import deepLearningCert from "../assets/certificates/DeepLearning-certificate.pdf";
 import dsaCert from "../assets/certificates/DSA-certificate.pdf";
 function Certifications() {
   return (
