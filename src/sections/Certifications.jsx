@@ -1,6 +1,3 @@
-import awsCert from "../assets/certificates/AWS-certificate.pdf";
-import deepLearningCert from "../assets/certificates/DeepLearning-certificate.pdf";
-import dsaCert from "../assets/certificates/DSA-certificate.pdf";
 function Certifications() {
   return (
     <section
@@ -33,7 +30,7 @@ function Certifications() {
               Cloud computing fundamentals, AWS services, and deployment concepts.
             </p>
             <a
-  href={awsCert}
+  href="/certificates/AWS-certificate.pdf"
   target="_blank"
   rel="noreferrer"
   className="
@@ -63,7 +60,7 @@ function Certifications() {
               Neural networks, CNNs, optimization, and deep learning techniques.
             </p>
             <a
-  href={deepLearningCert}
+  href="/certificates/DeepLearning-certificate.pdf"
   target="_blank"
   rel="noreferrer"
   className="
@@ -93,7 +90,7 @@ function Certifications() {
               Data structures, algorithms, and problem-solving fundamentals.
             </p>
             <a
-  href={dsaCert}
+  href="/certificates/DSA-certificate.pdf"
   target="_blank"
   rel="noreferrer"
   className="
