@@ -1,5 +1,5 @@
 import profileImage from "../assets/my-image.png";
-
+import resume from "../assets/Jayanth-resume.pdf";
 import {
   FaReact,
   FaGithub,
@@ -113,6 +113,25 @@ function Hero() {
             >
               Let's Connect
             </a>
+            <a
+             href={resume}
+              download
+              className="
+               px-6
+               py-3
+               rounded-full
+               border
+               border-purple-500/40
+               bg-white/5
+               hover:bg-purple-500/10
+               hover:border-purple-500
+               transition
+               font-medium
+              "
+              >
+              Download Resume
+            </a>
+
 
           </div>
         </motion.div>

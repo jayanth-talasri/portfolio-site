@@ -21,7 +21,7 @@ function Certifications() {
         </div>
 
         {/* Certifications Grid */}
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-8">
 
           {/* Card 1 */}
           <div className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md p-8 hover:border-purple-500/50 transition">

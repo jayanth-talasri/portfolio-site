@@ -1,24 +1,40 @@
 import { motion } from "framer-motion";
 
 const projects = [
-  
   {
     title: "Solar Irradiance Forecasting using Deep Learning",
+
     description:
       "Built a deep learning-based forecasting system using LSTM models to predict solar irradiance from meteorological time-series data. Achieved high prediction accuracy through advanced preprocessing, feature engineering, and model optimization techniques.",
-    tech: ["Python", "TensorFlow", "Pandas","Scikit-learn"],
+
+    tech: ["Python", "TensorFlow", "Pandas", "Scikit-learn"],
+
+    github:
+      "https://github.com/jayanth-talasri/Solar-irradiance-forecasting-using-deep-Learning-model-LSTM-",
   },
+
   {
     title: "AI Portfolio Website",
+
     description:
-      "A futuristic developer portfolio built using React, Tailwind CSS, and Framer Motion with immersive UI design.",
-    tech: ["React", "Tailwind", "Framer Motion"],
+      "Designed and developed a futuristic personal portfolio using React, Tailwind CSS, and Framer Motion with responsive UI architecture and modern visual interactions.",
+
+    tech: ["React", "Tailwind CSS", "Framer Motion"],
+
+    github:
+      "https://github.com/jayanth-talasri/portfolio-site",
   },
+
   {
     title: "Movie Magic Online Ticket Booking Platform",
+
     description:
       "Developed and deployed a full-stack movie ticket booking platform with secure authentication, real-time seat management, and scalable cloud infrastructure using AWS EC2 and Amazon RDS.",
-    tech: ["Django", "SQL", "AWS","HTML","CSS","Javascript"],
+
+    tech: ["Django", "SQL", "AWS", "HTML", "CSS", "JavaScript"],
+
+    github:
+      "https://github.com/jayanth-talasri/Movie_Mazic",
   },
 ];
 
@@ -116,11 +132,25 @@ function Projects() {
                 </div>
 
                 {/* Buttons */}
-                <div className="flex gap-4">
-                  <button className="px-5 py-2 rounded-full bg-purple-600 hover:bg-purple-500 transition text-sm font-medium">
-                    View Code
-                  </button>
-                </div>
+                <a
+  href={project.github}
+  target="_blank"
+  rel="noreferrer"
+  className="
+    inline-block
+    mt-4
+    px-5
+    py-2
+    rounded-full
+    bg-purple-600
+    hover:bg-purple-500
+    transition
+    text-sm
+    font-medium
+  "
+>
+  View Code
+</a>
               </div>
             </motion.div>
           ))}
