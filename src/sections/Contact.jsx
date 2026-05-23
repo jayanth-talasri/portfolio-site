@@ -48,10 +48,15 @@ function Contact() {
           {/* Glow */}
           <div className="absolute inset-0 bg-purple-500/10 blur-3xl" />
 
-          <form className="relative grid gap-6">
+            <form
+               action="https://formspree.io/f/maqkbyyw"
+              method="POST"
+              className="relative grid gap-6"
+            >
             {/* Name */}
             <input
               type="text"
+              name="name"
               placeholder="Your Name"
               className="
                 w-full
@@ -72,6 +77,7 @@ function Contact() {
             {/* Email */}
             <input
               type="email"
+              email="email"
               placeholder="Your Email"
               className="
                 w-full
@@ -91,6 +97,7 @@ function Contact() {
 
             {/* Message */}
             <textarea
+              name="message"
               rows="6"
               placeholder="Your Message"
               className="
