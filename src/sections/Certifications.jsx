@@ -24,7 +24,7 @@ function Certifications() {
           {/* Card 1 */}
           <div className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md p-8 hover:border-purple-500/50 transition">
             <h3 className="text-2xl font-bold mb-3">
-              AWS Cloud Foundations
+              AWS Cloud practitioner
             </h3>
 
             <p className="text-gray-400">
