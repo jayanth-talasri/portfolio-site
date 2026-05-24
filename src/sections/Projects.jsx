@@ -42,7 +42,7 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="relative py-32 px-6"
+      className="relative py-32 px-6 min-h-screen"
     >
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
@@ -133,24 +133,24 @@ function Projects() {
 
                 {/* Buttons */}
                 <a
-  href={project.github}
-  target="_blank"
-  rel="noreferrer"
-  className="
-    inline-block
-    mt-4
-    px-5
-    py-2
-    rounded-full
-    bg-purple-600
-    hover:bg-purple-500
-    transition
-    text-sm
-    font-medium
-  "
->
-  View Code
-</a>
+                href={project.github}
+                target="_blank"
+                rel="noreferrer"
+                className="
+                inline-block
+                mt-4
+                px-5
+                py-2
+                rounded-full
+                bg-purple-600
+                hover:bg-purple-500
+                transition
+                text-sm
+                font-medium
+               "
+              >
+               View Code
+              </a>
               </div>
             </motion.div>
           ))}

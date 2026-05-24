@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 function Certifications() {
   return (
     <section
@@ -30,24 +31,24 @@ function Certifications() {
               Cloud computing fundamentals, AWS services, and deployment concepts.
             </p>
             <a
-  href="/certificates/AWS-certificate.pdf"
-  target="_blank"
-  rel="noreferrer"
-  className="
-    inline-block
-    mt-6
-    px-5
-    py-2
-    rounded-full
-    bg-purple-600
-    hover:bg-purple-500
-    transition
-    text-sm
-    font-medium
-  "
->
-  View Certificate
-</a>
+            href="/certificates/AWS-certificate.pdf"
+            target="_blank"
+            rel="noreferrer"
+            className="
+            inline-block
+            mt-6
+            px-5
+            py-2
+            rounded-full
+            bg-purple-600
+            hover:bg-purple-500
+            transition
+            text-sm
+            font-medium
+          "
+          >
+           View Certificate
+          </a>
           </div>
 
           {/* Card 2 */}
@@ -60,24 +61,24 @@ function Certifications() {
               Neural networks, CNNs, optimization, and deep learning techniques.
             </p>
             <a
-  href="/certificates/DeepLearning-certificate.pdf"
-  target="_blank"
-  rel="noreferrer"
-  className="
-    inline-block
-    mt-6
-    px-5
-    py-2
-    rounded-full
-    bg-purple-600
-    hover:bg-purple-500
-    transition
-    text-sm
-    font-medium
-  "
->
-  View Certificate
-</a>
+            href="/certificates/DeepLearning-certificate.pdf"
+            target="_blank"
+            rel="noreferrer"
+            className="
+            inline-block
+            mt-6
+            px-5
+            py-2
+            rounded-full
+            bg-purple-600
+            hover:bg-purple-500
+            transition
+            text-sm
+            font-medium
+            "
+          >
+            View Certificate
+          </a>
           </div>
 
           {/* Card 3 */}
@@ -90,24 +91,24 @@ function Certifications() {
               Data structures, algorithms, and problem-solving fundamentals.
             </p>
             <a
-  href="/certificates/DSA-certificate.pdf"
-  target="_blank"
-  rel="noreferrer"
-  className="
-    inline-block
-    mt-6
-    px-5
-    py-2
-    rounded-full
-    bg-purple-600
-    hover:bg-purple-500
-    transition
-    text-sm
-    font-medium
-  "
->
-  View Certificate
-</a>
+             href="/certificates/DSA-certificate.pdf"
+             target="_blank"
+             rel="noreferrer"
+             className="
+             inline-block
+             mt-6
+             px-5
+             py-2
+             rounded-full
+             bg-purple-600
+             hover:bg-purple-500
+             transition
+             text-sm
+             font-medium
+             "
+            >
+             View Certificate
+            </a>
           </div>
 
         </div>

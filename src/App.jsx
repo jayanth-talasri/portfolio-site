@@ -14,7 +14,6 @@ function App() {
       <Background />
 
       <Navbar />
-
       <Hero />
       <About />
       <Skills />

@@ -4,30 +4,31 @@ import { Menu, X } from "lucide-react";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
-
+  
   // Detect active section while scrolling
   useEffect(() => {
+  const handleScroll = () => {
     const sections = document.querySelectorAll("section");
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      {
-        threshold: 0.6,
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop - 120;
+      const sectionHeight = section.offsetHeight;
+
+      if (
+        window.scrollY >= sectionTop &&
+        window.scrollY < sectionTop + sectionHeight
+      ) {
+        setActiveSection(section.id);
       }
-    );
+    });
+  };
 
-    sections.forEach((section) => observer.observe(section));
+  window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      sections.forEach((section) => observer.unobserve(section));
-    };
-  }, []);
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
+}, []);
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-black/20 border-b border-white/10">
@@ -96,11 +97,12 @@ function Navbar() {
               Projects
             </a>
           </li>
-<li>
+        
+          <li>
             <a
-              href="#Certifications"
+              href="#certifications"
               className={`transition hover:text-white ${
-                activeSection === "Certifications"
+                activeSection === "certifications"
                   ? "text-purple-400"
                   : "text-gray-300"
               }`}
@@ -202,10 +204,10 @@ function Navbar() {
             </li>
             <li>
               <a
-                href="#Certifications"
+                href="#certifications"
                 onClick={() => setIsOpen(false)}
                 className={`transition hover:text-white ${
-                  activeSection === "Certifications"
+                  activeSection === "certifications"
                     ? "text-purple-400"
                     : "text-gray-300"
                 }`}
