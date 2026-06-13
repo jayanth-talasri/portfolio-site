@@ -36,6 +36,18 @@ const projects = [
     github:
       "https://github.com/jayanth-talasri/Movie_Mazic",
   },
+
+  {
+    title: "Arka-AI (In Progress)",
+
+    description:
+      "AI-powered solar energy optimization platform that forecasts household solar generation and recommends the best energy usage schedule to maximize savings and self-consumption.",
+
+    tech: ["React", "FastAPI", "PostgreSQL", "Python", "JavaScript"],
+
+    github:
+      "https://github.com/jayanth-talasri/Arka_AI",
+  },
 ];
 
 function Projects() {
